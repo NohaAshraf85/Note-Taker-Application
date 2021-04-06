@@ -1,7 +1,5 @@
 const e = require("express");
 const { v4: uuidv4 } = require('uuid');
-
-// const notesData = require("../db/data/notesData");
 const util = require("util");
 const fs = require('fs');
 const writeFile = util.promisify(fs.writeFile);
