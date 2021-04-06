@@ -1,5 +1,7 @@
 const e = require("express");
-//const notesData = require("../db/data/notesData");
+const { v4: uuidv4 } = require('uuid');
+
+// const notesData = require("../db/data/notesData");
 const util = require("util");
 const fs = require('fs');
 const writeFile = util.promisify(fs.writeFile);
@@ -10,7 +12,6 @@ module.exports = (app) => {
     app.get("/api/notes", (req, res) => {
       readNotes().then(data => {
         
-       
         //const notesJSON = JSON.stringify(data, null, 2);
         res.writeHead(200, { 'Content-Type': 'application/json' });
 
@@ -25,10 +26,10 @@ module.exports = (app) => {
     app.post("/api/notes", (req,res) => {
       readNotes().then(data => {
         
-        const notesData=JSON.parse(data);
-        var max=Math.max.apply(Math, notesData.map(function(o){return o.id}));
+        const notesData = JSON.parse(data);
+       // var max = Math.max.apply(Math, notesData.map(function(o){return o.id}));
         notesData.push({
-          id:(max+1).toString(),
+          id:uuidv4(),
           title: req.body.title,
           text: req.body.text,
           
@@ -42,9 +43,9 @@ module.exports = (app) => {
     })
 
     app.delete("/api/notes/:noteid", (req,res) => {
-      var updated=false;
+      var updated = false;
       readNotes().then(data => {
-        const notesData=JSON.parse(data);
+        const notesData = JSON.parse(data);
         const chosen = req.params.noteid;
         
         var notesTemp=[];
@@ -84,9 +85,9 @@ module.exports = (app) => {
     {
 
       readNotes().then(data => {
-        const notesData=JSON.parse(data);
+        const notesData = JSON.parse(data);
         const chosen = req.params.noteid;
-        var updated=false;
+        var updated = false;
         for (let i = 0; i < notesData.length; i++) {
             if (chosen === notesData[i].id) {
                 //const notesJSON = JSON.stringify(data, null, 2);
@@ -100,8 +101,6 @@ module.exports = (app) => {
      
         return res.json(false);
       
-        
-
       })
       
 
@@ -110,12 +109,11 @@ module.exports = (app) => {
     function readNotes()
     {
       return readFile(`./Develop/db/db.json`);
-     
     }
+
     function writeNotes(notesData)
     {
       writeFile(`./Develop/db/db.json`, JSON.stringify(notesData));
-     
     }
    
 }
