@@ -49,16 +49,37 @@ To install the Note Taker Application, follow the following steps:
 The Note Taker Application is used as a fast application to get organized  and create, save and delete notes .
 
 ## How it works
+The Note Taker Application has both backend and a frontend aspects. To start the application follow the following steps:
+
+1. Follow the [Installation](#Installation) steps
+2. Invoke the application by right clicking on the `<server.js>`file and opn it using Open in Integrated Terminal of Visual Studio Code (VSC)
+3. In the Integrated Terminal of VSC, type the ocmmand `Node index.js`
+4. App listening on PORT: 8080 message should appeare in the Integrated Terminal
+5. In your browser, type localhost:8080 and test the application functionality
+
+The Note Taker Applciatoin is deployed as a fronend application on [Heroku](https://dashboard.heroku.com/apps), to use the application through Heroku through the following link: [Note-Taker](https://fathomless-sierra-25537.herokuapp.com/)
 
 ## License
+![APM](https://img.shields.io/apm/l/README)
 
 ## Badges
+![javaScript](https://img.shields.io/badge/JavaScript-100%25-blue)
+![Node](https://img.shields.io/badge/Node.js-CLI-blue)
+![Insomnia](https://img.shields.io/badge/Insomnia-API%20Test-blue)
+![express.js](https://img.shields.io/badge/express.js%20-blue)
+![uuid](https://img.shields.io/badge/uuid-unique%20id%20-blue)
 
 ## Contributing
+To contribute to this project, please make sure you follow the guidelines in [The Contributor Covenant](https://www.contributor-covenant.org/) as general guidelines.
+Kindly maintain the highest ethics and respect. For further questions or requests kindly contact me through my [Email](mailto:noha_ashraf85@hotmail.com) or [GitHub](https://github.com/NohaAshraf85)
 
 ## Tests
+The Note Taker Application API get/post and delete methods have been tested using [Insomnia](https://insomnia.rest/)
 
 ## Deployment
+The [Note-Taker](https://fathomless-sierra-25537.herokuapp.com/) is deployed on Heroku.
 
 ## Questions
+For any questions, please contact me through [GitHub](https://github.com/NohaAshraf85) 
+or [Email](mailto:noha_ashraf85@hotmail.com)
 
