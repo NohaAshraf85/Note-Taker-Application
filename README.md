@@ -32,8 +32,8 @@ The application is deployed on Heroku and can be accessed through the following 
 [Questions](#questions)
 
 ## Technologies Used
-1. HTML for the application front-end 
-2. CSS for the application front-end styling
+1. HTML 
+2. CSS
 3. JavaScript
 4. Node.js
 5. express
@@ -53,20 +53,16 @@ The Note Taker Application has both backend and a frontend aspects. To start the
 
 1. Follow the [Installation](#Installation) steps
 2. Invoke the application by right clicking on the `<server.js>`file and opn it using Open in Integrated Terminal of Visual Studio Code (VSC)
-3. In the Integrated Terminal of VSC, type the ocmmand `Node index.js`
+3. In the Integrated Terminal of VSC, type the ocmmand `Node server.js`
 4. App listening on PORT: 8080 message should appeare in the Integrated Terminal
 
 ![Demo](./Assets/invoke.gif)
-
-View the video demo of how to [invoke](https://drive.google.com/file/d/1_r5YoBPnhpSXbsQokr_RjxwbtUwg0Z-S/view) the application
 
 5. In your browser, type localhost:8080 and test the application functionality
 
 ![Demo](./Assets/openInBrowser.gif)
 
-View the video demo of how to open the application in broswer [Note Taker](https://drive.google.com/file/d/1d7Er966btXYX-y10QqKuenOx9d5s7Twg/view)
-
-The Note Taker Applciatoin is deployed as a fronend application on [Heroku](https://dashboard.heroku.com/apps), to use the application through Heroku through the following link: [Note-Taker](https://fathomless-sierra-25537.herokuapp.com/)
+The Note Taker Applciatoin is deployed on [Heroku](https://dashboard.heroku.com/apps), to open the deployed application use the following link:  [Note-Taker](https://fathomless-sierra-25537.herokuapp.com/)
 
 ## License
 ![APM](https://img.shields.io/apm/l/README)
@@ -89,8 +85,6 @@ The Note Taker Application API get/post and delete methods have been tested usin
 The [Note-Taker](https://fathomless-sierra-25537.herokuapp.com/) is deployed on Heroku.
 
 ![Demo](./Assets/heroku-demo.gif)
-
-View the video a demo of the deployed application on heroku [Deployed Note Taker Application](https://drive.google.com/file/d/1LmcjEEoCpFJd-6woumM1WZNILEftpTKu/view)
 
 ## Questions
 For any questions, please contact me through [GitHub](https://github.com/NohaAshraf85) 
