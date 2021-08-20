@@ -1,7 +1,7 @@
 # Note Taker Application
 ## Description
 
-This application is a simple note taker. It allowes the user to create and save a new note, navigate between different notes and delete any note.
+This application is a simple note taker. It allows the user to create and save a new note, navigate between different notes and delete any note.
 
 Each note entry provides the user with a Note Title and a Note Text.
 
